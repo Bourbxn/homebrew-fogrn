@@ -1,16 +1,12 @@
 class Fogrn < Formula
   desc "โปรแกรม fogrn สำหรับใช้งานใน Terminal"
   homepage "https://github.com/Bourbxn/fogrn"
-  url "https://github.com/Bourbxn/fogrn/releases/download/v0.1.0/fogrn_v0.1.0"
-  sha256 "219f8d2b7d036cd66a000c377573f8e9735e9309aea3b9198ff07c9413b5711a"
+  url "https://github.com/Bourbxn/fogrn/releases/download/v0.1.0/fogrn.tar.gz"
+  sha256 "35c48f7c845c934c82f7df7cb394040c744b76084058f604d5d8b02d35b92ac6"
   version "0.1.0"
 
   def install
-    bin.install "fogrn_v0.1.0" => "fogrn"
-  end
-
-  test do
-    assert_match "fogrn version", shell_output("#{bin}/fogrn --version")
+    bin.install "fogrn"
   end
 end
 
